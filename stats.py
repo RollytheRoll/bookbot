@@ -107,7 +107,7 @@ def count_charakters(text):
 
 def sorted_charakters(charakters):
     #dict wird durch sorted zu einem tuple
-    sorted_list = sorted(charakters.items(), key =lambda x : x[1], reverse=True)
+    return dict(sorted(charakters.items(), key = lambda x : x[1], reverse=True))
     #dict() benutzen um es einfach wieder in ein dict umzuwandeln
-    sorted_list = dict(sorted_list)
-    return sorted_list
+    #sorted_list = dict(sorted_list)
+    #return sorted_list
